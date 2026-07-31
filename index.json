@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "run_id": "89fb50be174bf4a29071edbcf018022c",
+    "timestamp_utc": "2026-07-31T23:04:43+00:00",
+    "label": "BASELINE",
+    "tps": 3.55,
+    "top1": 1.0,
+    "kl": 0.004,
+    "commit": "20c0fe6a024c08348eb06fec740991dfca9253aa",
+    "attestation_type": "tdx-quote"
+  }
+]

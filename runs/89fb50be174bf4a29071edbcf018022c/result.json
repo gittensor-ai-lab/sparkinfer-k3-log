@@ -1,0 +1,16 @@
+{
+  "commit": "9bb1444",
+  "frontier_tps": 0.0,
+  "kl": 0.004,
+  "label": "BASELINE",
+  "model": "kimi-k3",
+  "pass": true,
+  "provenance": {
+    "layers": 93,
+    "ms_per_token": 281.76,
+    "node": "h200x8",
+    "quant": "UD-IQ1_S"
+  },
+  "top1": 1.0,
+  "tps": 3.55
+}

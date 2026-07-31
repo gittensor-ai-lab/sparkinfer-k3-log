@@ -1,0 +1,71 @@
+{
+  "code": {
+    "build_hash": "",
+    "commit": "20c0fe6a024c08348eb06fec740991dfca9253aa",
+    "repo": "gittensor-ai-lab/sparkinfer-k3",
+    "scoring_scripts_commit": "fb8e012eb8c591cd71c3bc7d46a5c00d1812c461"
+  },
+  "environment": {
+    "clock_mhz": 0,
+    "clock_spread_mhz": 0,
+    "clocks_pinned": false,
+    "cuda_version": "",
+    "decode_tokens": 93,
+    "driver_version": "",
+    "eval_mode": "kimi_k3/h200x8",
+    "gpu_arch": "",
+    "gpu_name": "",
+    "pin_target_mhz": 0
+  },
+  "measurements": {
+    "primary": {
+      "ctx_128_tps": null,
+      "ctx_16384_tps": null,
+      "ctx_32768_tps": null,
+      "ctx_4096_tps": null,
+      "ctx_512_tps": null,
+      "guard_128_baseline": null,
+      "guard_128_pass": true,
+      "guard_128_ratio": null,
+      "guard_16k_baseline": null,
+      "guard_16k_pass": true,
+      "guard_16k_ratio": null,
+      "guard_32k_baseline": null,
+      "guard_32k_pass": true,
+      "guard_32k_ratio": null,
+      "guard_4k_baseline": null,
+      "guard_4k_pass": true,
+      "guard_4k_ratio": null,
+      "guard_512_baseline": null,
+      "guard_512_pass": true,
+      "guard_512_ratio": null,
+      "kl": 0.004,
+      "model": "kimi-k3",
+      "model_sha256": "",
+      "top1": 1.0
+    }
+  },
+  "references": {
+    "eval_seed": "ids:b80013c83a2515a2",
+    "guard_model_file": "",
+    "guard_model_sha256": "",
+    "llamacpp_commit": "efc8bc38f0a9950cbb10ccef2cf48b951c39d3b2",
+    "model_file": "hello.spkl",
+    "model_sha256": "86620b23a5b49bde3c48c283aad396ebd1ef4e38ea6159b2d951593b6d57b529"
+  },
+  "timestamp_utc": "2026-07-31T23:04:43+00:00",
+  "verdict": {
+    "best_context_label": "",
+    "context_gains_pct": {},
+    "delta_tps": null,
+    "guard_regression_labels": [],
+    "label": "BASELINE",
+    "model": "kimi-k3",
+    "pass": true,
+    "pct_over_frontier": null,
+    "reason": null,
+    "regression_labels": [],
+    "score_context": null,
+    "tps": 3.55
+  }
+}
