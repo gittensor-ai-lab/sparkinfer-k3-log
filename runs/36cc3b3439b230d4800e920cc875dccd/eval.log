@@ -1,0 +1,24 @@
+#55: skip — the 8x H200 box is not ticked — the author has not attested a node run
+#52: skip — the 8x H200 box is not ticked — the author has not attested a node run
+main: measuring the frontier at 9996452c on h200x8 …
+main: accuracy measured HERE — top1=1.0 kl=0.004045502711553277
+main: frontier = 4.53 tok/s @ 9996452c
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K 1.0 -> 4.53 (main @ 9996452c)
+>> bench/scripts/reference.lock updated on main — eval-label.yml will re-derive against 4.53
+   note: main moved, so every open PR is now BEHIND (branch protection is strict) and needs a rebase before it can merge
+>> #59: branch updated onto main, bed77256 -> 138eb665
+#59: evaluating 138eb665 on h200x8 against frontier 4.53 …
+#59: accuracy measured HERE — top1=1.0 kl=0.004045502711553277
+#59: box-side publish failed (expected — no git credentials there); publishing 9a0f1609db8a from here instead
+#59: tps=4.54 top1=1.0 kl=0.004 ms/token=220.48 — tier is eval-label.yml's to derive
+>> #59: published runs/9a0f1609db8af5fbbdc7936804d34ae1 to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #59
+#57: evaluating 8189abe9 on h200x8 against frontier 4.53 …
+#57: accuracy measured HERE — top1=1.0 kl=0.004045502711553277
+#57: box-side publish failed (expected — no git credentials there); publishing 36cc3b3439b2 from here instead
+#57: tps=9.19 top1=1.0 kl=0.004 ms/token=108.77 — tier is eval-label.yml's to derive
+>> #57: published runs/36cc3b3439b230d4800e920cc875dccd to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #57
+>> merge-first: #57 (9.19 tok/s)
+!! #57: NOT merged — no eval:* tier — it has not passed the gate; behind main — its tier predates the current frontier
+done — 2 evaluated, 2 sealed to the log; tiers are eval-label.yml's
