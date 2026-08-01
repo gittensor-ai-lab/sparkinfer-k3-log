@@ -1,0 +1,15 @@
+#49: skip — draft — unfinished work is not evaluated
+#33: skip — the 8x H200 box is not ticked — the author has not attested a node run
+main: measuring the frontier at ddb3f04b on h200x8 …
+main: frontier = 9.63 tok/s @ ddb3f04b
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128 3.55 -> 9.63 (main @ ddb3f04b)
+>> bench/scripts/reference.lock updated on main — eval-label.yml will re-derive against 9.63
+   note: main moved, so every open PR is now BEHIND (branch protection is strict) and needs a rebase before it can merge
+#20: evaluating 9085a0d7 on h200x8 against frontier 9.63 …
+#20: box-side publish failed (expected — no git credentials there); publishing 51fa336c1271 from here instead
+#20: tps=10.23 top1=1.0 kl=0.004 ms/token=97.76 — tier is eval-label.yml's to derive
+>> #20: published runs/51fa336c12710d1381544ceff75135c2 to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #20
+>> merge-first: #20 (10.23 tok/s)
+!! #20: NOT queued for auto-merge — labels ['needs-rebase']
+done — 1 evaluated, 1 sealed to the log; tiers are eval-label.yml's, merges wait on review
