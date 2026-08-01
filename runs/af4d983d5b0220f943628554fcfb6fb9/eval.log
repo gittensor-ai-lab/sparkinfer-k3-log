@@ -1,0 +1,12 @@
+#52: skip — draft — unfinished work is not evaluated
+main: measuring the frontier at aa27aeeb on h200x8 …
+main: frontier = 1.01 tok/s @ aa27aeeb
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K pins 1.0, main measures 1.01 — agrees within 2%, leaving the lock alone
+>> #49: branch updated onto main, b590de3a -> 7ce4410f
+#49: evaluating 7ce4410f on h200x8 against frontier 1.0 …
+#49: box-side publish failed (expected — no git credentials there); publishing af4d983d5b02 from here instead
+#49: tps=4.5 top1=1.0 kl=0.004 ms/token=222.21 — tier is eval-label.yml's to derive
+>> #49: published runs/af4d983d5b0220f943628554fcfb6fb9 to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #49
+>> merge-first: #49 (4.5 tok/s)
+done — 1 evaluated, 1 sealed to the log; tiers are eval-label.yml's
