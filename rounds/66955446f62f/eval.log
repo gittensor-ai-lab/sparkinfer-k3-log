@@ -1,0 +1,19 @@
+#55: skip — the 8x H200 box is not ticked — the author has not attested a node run
+#52: skip — the 8x H200 box is not ticked — the author has not attested a node run
+main: measuring the frontier at 66955446 on h200x8 …
+main: accuracy measured HERE — top1=1.0 kl=0.004045502711553277
+frontier measurement failed — no RESULT_JSON from the harness for main —   faster than elapsed time is the signature of a fabricated number.
+>> model fingerprint  : 4128f23a2dcea136 (no pin — recorded, not enforced)
+>> Kimi K3 eval — node=h200x8 devices=0,1,2,3,4,5,6,7 layers=93 ctx=131072
+>> llama.cpp reference (tier basis): 16.7026 tok/s  @ ctx 131072
+>> sparkinfer frontier             : 0 tok/s  (none yet -> BASELINE)
+>> timing sparkinfer decode at ctx 131072 (2 runs, 8 and 24 tokens) ...
+>> sparkinfer: 3.45 tok/s (289.88 ms/token)  [wall-clock differential]
+>> self-reported 4.55 tok/s vs wall-clock 3.45 tok/s
+
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+kimi_k3_eval: the bench claims 4.55 tok/s but wall clock allows 3.45.
+  refusing to score: the binary is built from the PR's runtime/, and a self-report
+  faster than elapsed time is the signature of a fabricated number.
+
