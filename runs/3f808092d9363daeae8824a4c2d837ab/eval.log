@@ -1,0 +1,10 @@
+#49: skip — draft — unfinished work is not evaluated
+#33: skip — the 8x H200 box is not ticked — the author has not attested a node run
+#20: evaluating 9085a0d7 on h200x8 …
+#20: box-side publish failed (expected — no git credentials there); publishing 3f808092d936 from here instead
+#20: tps=10.28 top1=1.0 kl=0.004 ms/token=97.24 — tier is eval-label.yml's to derive
+>> #20: published runs/3f808092d9363daeae8824a4c2d837ab to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #20
+>> merge-first: #20 (10.28 tok/s)
+!! #20: NOT merged — labels ['needs-rebase']; blocked by a required check or review
+done — 1 evaluated, 1 sealed to the log; tiers are eval-label.yml's, merges wait on review
