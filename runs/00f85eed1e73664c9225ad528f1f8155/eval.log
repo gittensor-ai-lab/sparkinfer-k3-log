@@ -1,0 +1,34 @@
+#55: skip — the 8x H200 box is not ticked — the author has not attested a node run
+main: measuring the frontier at 58674997 on h200x8 …
+main: accuracy measured HERE — top1=1.0 kl=0.004045502711553277
+main: frontier = 9.04 tok/s @ 58674997
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K 4.53 -> 9.04 (main @ 58674997)
+>> bench/scripts/reference.lock updated on main — eval-label.yml will re-derive against 9.04
+   note: main moved, so every open PR is now BEHIND (branch protection is strict) and needs a rebase before it can merge
+>> #64: branch updated onto main, 0232876e -> 6700d348
+>> #63: branch updated onto main, 2285cc62 -> 920e9bb6
+>> #59: branch updated onto main, 30f01be0 -> 058c536a
+#64: evaluating 6700d348 on h200x8 against frontier 9.04 …
+#64: accuracy measured HERE — top1=1.0 kl=0.004045518058618816
+#64: box-side publish failed (expected — no git credentials there); publishing 00f85eed1e73 from here instead
+#64: tps=9.99 top1=1.0 kl=0.004 ms/token=100.07 — tier is eval-label.yml's to derive
+>> #64: published runs/00f85eed1e73664c9225ad528f1f8155 to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #64
+>> #64: tier applied by eval-label.yml — eval:s
+#63: evaluating 920e9bb6 on h200x8 against frontier 9.04 …
+#63: accuracy measured HERE — top1=1.0 kl=0.008075119677386338
+#63: box-side publish failed (expected — no git credentials there); publishing 56922f7679ab from here instead
+#63: tps=14.95 top1=1.0 kl=0.0081 ms/token=66.88 — tier is eval-label.yml's to derive
+>> #63: published runs/56922f7679ab17ed682beb781f3c36cc to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #63
+>> #63: tier applied by eval-label.yml — eval:xl
+#59: evaluating 058c536a on h200x8 against frontier 9.04 …
+#59: accuracy measured HERE — top1=1.0 kl=0.004045514551158082
+#59: box-side publish failed (expected — no git credentials there); publishing 06f9b40b04ba from here instead
+#59: tps=9.47 top1=1.0 kl=0.004 ms/token=105.56 — tier is eval-label.yml's to derive
+>> #59: published runs/06f9b40b04bacae2e2fa6b85bfa23fbe to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #59
+>> #59: tier applied by eval-label.yml — eval:none
+>> merge-first: #63 (14.95 tok/s)
+!! #63: NOT merged — labels ['hold']
+done — 3 evaluated, 3 sealed to the log; tiers are eval-label.yml's
