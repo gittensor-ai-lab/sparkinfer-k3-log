@@ -1,0 +1,20 @@
+#79: skip — the 8x H200 box is not ticked — the author has not attested a node run
+#76: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#74: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#71: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#64: skip — conflicts with main — rebase before it can be evaluated or merged
+#55: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+main: measuring the frontier at 11eb5e4d on h200x8 …
+main: accuracy measured HERE — top1=1.0 kl=0.0038673887147093475
+   harness overrides from the controller: KIMI_K3_MARGIN_TOKENS=512
+main: frontier = 18.9 tok/s @ 11eb5e4d
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K pins 18.88, main measures 18.9 — agrees within 2%, leaving the lock alone
+#77: evaluating 78aee5ab on h200x8 against frontier 18.88 …
+#77: accuracy measured HERE — top1=1.0 kl=0.0038673887147093475
+   harness overrides from the controller: KIMI_K3_MARGIN_TOKENS=512
+#77: box-side publish failed (expected — no git credentials there); publishing aac53b8c446e from here instead
+#77: tps=20.14 top1=1.0 kl=0.0039 ms/token=49.65 — tier is eval-label.yml's to derive
+>> #77: published runs/aac53b8c446e0d7c68599fa2ad9fb72d to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #77
+>> merge-first: #77 (20.14 tok/s)
+done — 1 evaluated, 1 sealed to the log; tiers are eval-label.yml's
