@@ -1,0 +1,27 @@
+#79: skip — the 8x H200 box is not ticked — the author has not attested a node run
+#76: skip — the 8x H200 box is not ticked — the author has not attested a node run
+#55: skip — the 8x H200 box is not ticked — the author has not attested a node run
+main: measuring the frontier at 11eb5e4d on h200x8 …
+main: accuracy measured HERE — top1=1.0 kl=0.0038673887147093475
+frontier measurement failed — no RESULT_JSON from the harness for main — kimi_k3_eval: bench failed
+>> model fingerprint  : 8c3b548967ff7583 (no pin — recorded, not enforced)
+>> Kimi K3 eval — node=h200x8 devices=0,1,2,3,4,5,6,7 layers=93 ctx=131072
+>> llama.cpp reference (tier basis): 16.7026 tok/s  @ ctx 131072
+>> sparkinfer frontier             : 0 tok/s  (none yet -> BASELINE)
+>> timing sparkinfer decode at ctx 131072 (2 runs, 8 and 136 tokens) ...
+
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+[k3-tp] rank 0: device 0, experts [0,112)
+[k3-tp] rank 1: device 1, experts [112,224)
+[k3-tp] rank 2: device 2, experts [224,336)
+[k3-tp] rank 3: device 3, experts [336,448)
+[k3-tp] rank 4: device 4, experts [448,560)
+[k3-tp] rank 5: device 5, experts [560,672)
+[k3-tp] rank 6: device 6, experts [672,784)
+[k3-tp] rank 7: device 7, experts [784,896)
+[tp] FATAL for sharded execution: ncclCommInitAll(n=8): unhandled cuda error (run with NCCL_DEBUG=INFO for details)
+[k3-tp] FATAL: fell back to the no-op collective at tp_size 8: ncclCommInitAll(n=8): unhandled cuda error (run with NCCL_DEBUG=INFO for details)
+init failed at tp=8, 93 layers
+kimi_k3_eval: bench failed
+
