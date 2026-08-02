@@ -1,0 +1,11 @@
+main: measuring the frontier at 23e56f39 on h200x8 …
+main: accuracy measured HERE — top1=1.0 kl=0.0038673887147093475
+main: frontier = 18.14 tok/s @ 23e56f39
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K pins 18.14, main measures 18.14 — agrees within 2%, leaving the lock alone
+#73: evaluating c8fdcd92 on h200x8 against frontier 18.14 …
+#73: accuracy measured HERE — top1=1.0 kl=0.0038673887147093475
+#73: box-side publish failed (expected — no git credentials there); publishing b2b68c1cff24 from here instead
+#73: tps=18.87 top1=1.0 kl=0.0039 ms/token=52.99 — tier is eval-label.yml's to derive
+>> #73: published runs/b2b68c1cff243cbc1c3d29724aa9bff7 to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #73
+done — 1 evaluated, 1 sealed to the log; tiers are eval-label.yml's
