@@ -1,0 +1,31 @@
+#76: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#71: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#64: skip — conflicts with main — rebase before it can be evaluated or merged
+#55: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+main: measuring the frontier at 83ac6d4e on h200x8 …
+main: accuracy measured HERE — top1=1.0 kl=0.0038673887147093475
+main: frontier = 20.14 tok/s @ 83ac6d4e
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K 18.88 -> 20.14 (main @ 83ac6d4e)
+>> bench/scripts/reference.lock updated on main — eval-label.yml will re-derive against 20.14
+   note: main moved, so every open PR is now BEHIND (branch protection is strict) and needs a rebase before it can merge
+>> #81: branch updated onto main, 58ea1390 -> 816fbd8a
+>> #74: branch updated onto main, 9bd5ced3 -> 015f76a1
+#81: evaluating 816fbd8a on h200x8 against frontier 20.14 …
+#81: accuracy measured HERE — top1=1.0 kl=0.0038673887147093475
+#81: box-side publish failed (expected — no git credentials there); publishing c11998120f9f from here instead
+#81: tps=20.98 top1=1.0 kl=0.0039 ms/token=47.67 — tier is eval-label.yml's to derive
+>> #81: published runs/c11998120f9fc91bf939d09151b8ae8e to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #81
+>> #81: tier applied by eval-label.yml — eval:s
+#74: evaluating 015f76a1 on h200x8 against frontier 20.14 …
+#74: accuracy measured HERE — top1=1.0 kl=0.0059102102093803194
+#74: box-side publish failed (expected — no git credentials there); publishing d833ff21b49a from here instead
+#74: tps=21.26 top1=1.0 kl=0.0059 ms/token=47.05 — tier is eval-label.yml's to derive
+>> #74: published runs/d833ff21b49a60718aade60e5b354e7e to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #74
+>> #74: tier applied by eval-label.yml — eval:m
+>> merge-first: #74 (21.26 tok/s)
+>> #74: merged (admin) — round's largest verified gain
+>> #81: needs-rebase (frontier moved)
+>> #71: needs-rebase (frontier moved)
+done — 2 evaluated, 2 sealed to the log; tiers are eval-label.yml's
