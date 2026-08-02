@@ -1,0 +1,55 @@
+#55: skip — the 8x H200 box is not ticked — the author has not attested a node run
+main: measuring the frontier at ddbd03a9 on h200x8 …
+main: accuracy measured HERE — top1=1.0 kl=0.0038673887147093475
+main: frontier = 17.46 tok/s @ ddbd03a9
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K 16.06 -> 17.46 (main @ ddbd03a9)
+>> bench/scripts/reference.lock updated on main — eval-label.yml will re-derive against 17.46
+   note: main moved, so every open PR is now BEHIND (branch protection is strict) and needs a rebase before it can merge
+>> #73: branch updated onto main, bac7c60d -> 39b58aa5
+>> #71: branch updated onto main, e301ee8e -> c529c5e5
+>> #67: branch updated onto main, b6ed625a -> 3c67ed96
+#73: evaluating 39b58aa5 on h200x8 against frontier 17.46 …
+#73: accuracy measured HERE — top1=1.0 kl=0.0038673887147093475
+#73: eval failed — no RESULT_JSON from the harness for #73 —   bounds nothing and the self-report is unchecked.
+>> model fingerprint  : 4128f23a2dcea136 (no pin — recorded, not enforced)
+>> Kimi K3 eval — node=h200x8 devices=0,1,2,3,4,5,6,7 layers=93 ctx=131072
+>> llama.cpp reference (tier basis): 16.7026 tok/s  @ ctx 131072
+>> sparkinfer frontier             : 17.46 tok/s
+>> timing sparkinfer decode at ctx 131072 (2 runs, 8 and 136 tokens) ...
+
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+>> wall-clock bound: 37.35 tok/s (26.77 ms/token) over 128 marginal tokens
+kimi_k3_eval: 128 extra tokens took 3.43 s of wall clock, but at the claimed 55.06 ms/token they must take about 7.05 s (3.52 s at the 2.0x floor).
+  refusing to score: the longer run did not do the extra work, so the differential
+  bounds nothing and the self-report is unchecked.
+
+#71: evaluating c529c5e5 on h200x8 against frontier 17.46 …
+#71: accuracy measured HERE — top1=1.0 kl=0.0034677691031198333
+#71: box-side publish failed (expected — no git credentials there); publishing ac0723336659 from here instead
+#71: tps=17.53 top1=1.0 kl=0.0035 ms/token=57.03 — tier is eval-label.yml's to derive
+>> #71: published runs/ac0723336659d12234703e398af1b703 to gittensor-ai-lab/sparkinfer-k3-log
+>> #71: cleared stale tier (eval:none) — it was measured against a frontier that has since moved
+>> posted eval to #71
+>> #71: tier applied by eval-label.yml — eval:none
+#67: evaluating 3c67ed96 on h200x8 against frontier 17.46 …
+#67: accuracy measured HERE — top1=1.0 kl=0.0038673887147093475
+#67: box-side publish failed (expected — no git credentials there); publishing 3e5a96d59242 from here instead
+#67: tps=18.15 top1=1.0 kl=0.0039 ms/token=55.09 — tier is eval-label.yml's to derive
+>> #67: published runs/3e5a96d59242d26d68530323d381f532 to gittensor-ai-lab/sparkinfer-k3-log
+>> #67: cleared stale tier (eval:xs) — it was measured against a frontier that has since moved
+>> posted eval to #67
+>> #67: tier applied by eval-label.yml — eval:s
+#64: evaluating 6700d348 on h200x8 against frontier 17.46 …
+#64: accuracy measured HERE — top1=1.0 kl=0.004045518058618816
+#64: box-side publish failed (expected — no git credentials there); publishing 6d0ca87d2192 from here instead
+#64: tps=15.72 top1=1.0 kl=0.004 ms/token=63.6 — tier is eval-label.yml's to derive
+>> #64: published runs/6d0ca87d21927c0aa341f6b020df334f to gittensor-ai-lab/sparkinfer-k3-log
+!! #64: needs-rebase stands — merge conflicts are real staleness
+>> #64: cleared stale tier (eval:s) — it was measured against a frontier that has since moved
+>> posted eval to #64
+>> #64: tier applied by eval-label.yml — eval:none
+>> merge-first: #67 (18.15 tok/s)
+>> #67: merged (admin) — round's largest verified gain
+>> #71: needs-rebase (frontier moved)
+done — 3 evaluated, 3 sealed to the log; tiers are eval-label.yml's
