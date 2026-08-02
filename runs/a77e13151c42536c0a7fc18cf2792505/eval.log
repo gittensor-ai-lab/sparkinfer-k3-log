@@ -1,0 +1,51 @@
+#55: skip — the 8x H200 box is not ticked — the author has not attested a node run
+main: measuring the frontier at 3bc3211e on h200x8 …
+main: accuracy measured HERE — top1=1.0 kl=0.008075119677386338
+main: frontier = 16.06 tok/s @ 3bc3211e
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K 9.04 -> 16.06 (main @ 3bc3211e)
+>> bench/scripts/reference.lock updated on main — eval-label.yml will re-derive against 16.06
+   note: main moved, so every open PR is now BEHIND (branch protection is strict) and needs a rebase before it can merge
+>> #71: branch updated onto main, 7bc474cd -> 3ed16d96
+>> #67: branch updated onto main, ceb93301 -> 907e585e
+>> #59: branch updated onto main, 5e7a0dc0 -> 99e4bad5
+#71: evaluating 3ed16d96 on h200x8 against frontier 16.06 …
+#71: accuracy measured HERE — top1=1.0 kl=0.006533477894384695
+#71: box-side publish failed (expected — no git credentials there); publishing a77e13151c42 from here instead
+#71: tps=16.25 top1=1.0 kl=0.0065 ms/token=61.56 — tier is eval-label.yml's to derive
+>> #71: published runs/a77e13151c42536c0a7fc18cf2792505 to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #71
+#67: evaluating 907e585e on h200x8 against frontier 16.06 …
+#67: accuracy measured HERE — top1=1.0 kl=0.008075119677386338
+#67: box-side publish failed (expected — no git credentials there); publishing d51df221fdcc from here instead
+#67: tps=16.63 top1=1.0 kl=0.0081 ms/token=60.15 — tier is eval-label.yml's to derive
+>> #67: published runs/d51df221fdcccfccfc9c7492ab2b420f to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #67
+#64: evaluating 6700d348 on h200x8 against frontier 16.06 …
+#64: accuracy measured HERE — top1=1.0 kl=0.004045518058618816
+#64: eval failed — no RESULT_JSON from the harness for #64 — ValueError: could not convert string to float: ''
+de=h200x8 devices=0,1,2,3,4,5,6,7 layers=93 ctx=131072
+>> llama.cpp reference (tier basis): 16.7026 tok/s  @ ctx 131072
+>> sparkinfer frontier             : 16.06 tok/s
+>> timing sparkinfer decode at ctx 131072 (2 runs, 8 and 136 tokens) ...
+>> sparkinfer:  tok/s ( ms/token)  [self-timed, within the wall-clock bound]
+>> accuracy: top1=1.0  mean_kld=0.004045518058618816  [measured off-box by the controller]
+
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+>> wall-clock bound: 24.59 tok/s (40.66 ms/token) over 128 marginal tokens
+kimi_k3_eval: 128 extra tokens took 5.20 s of wall clock, but at the claimed 94.98 ms/token they must take about 12.16 s (6.08 s at the 2.0x floor).
+  refusing to score: the longer run did not do the extra work, so the differential
+  bounds nothing and the self-report is unchecked.
+Traceback (most recent call last):
+  File "/workspace/k3-botrun/bench/scripts/label.py", line 34, in <module>
+    tps      = float(sys.argv[1])   # measured median tok/s (or TTFT seconds when lower-is-better)
+               ^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+
+#59: evaluating 99e4bad5 on h200x8 against frontier 16.06 …
+#59: accuracy measured HERE — top1=1.0 kl=0.0038673887147093475
+#59: box-side publish failed (expected — no git credentials there); publishing 67e28880755c from here instead
+#59: tps=17.51 top1=1.0 kl=0.0039 ms/token=57.12 — tier is eval-label.yml's to derive
+>> #59: published runs/67e28880755cb37f268004ceeb794d0d to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #59
+done — 3 evaluated, 3 sealed to the log; tiers are eval-label.yml's
