@@ -1,0 +1,7 @@
+#55: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#76: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+main: measuring the frontier at b8dbcba0 on h200x8 …
+main: accuracy measured HERE — top1=1.0 kl=0.0059102102093803194
+main: frontier = 11.61 tok/s @ b8dbcba0
+!! main measured 11.61 tok/s but KIMI_K3_H200X8_IQ1S_SPARKINFER_128K pins 21.24 — main is 45.3% slower than its own frontier.
+   That is a regression on main or a degraded box, and lowering the frontier would inflate every tier scored after it. Stopping.
