@@ -1,0 +1,56 @@
+#55: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#76: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#86: skip — conflicts with main — rebase before it can be evaluated or merged
+#87: skip — conflicts with main — rebase before it can be evaluated or merged
+main: measuring the frontier at 8c48af9e on h200x8 …
+main: accuracy measured HERE — top1=1.0 kl=0.0059102102093803194
+main: frontier = 26.09 tok/s @ 8c48af9e
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K 22.12 -> 26.09 (main @ 8c48af9e)
+>> bench/scripts/reference.lock updated on main — eval-label.yml will re-derive against 26.09
+   note: main moved, so every open PR is now BEHIND (branch protection is strict) and needs a rebase before it can merge
+>> #71: branch updated onto main, 8ad77df5 -> d7d2a641
+>> #88: branch updated onto main, 06b8002a -> 69de112d
+>> #90: branch updated onto main, 0fa6d513 -> 7cfe57c0
+>> #96: branch updated onto main, 9b327b49 -> d402bfa0
+#71: evaluating d7d2a641 on h200x8 against frontier 26.09 …
+#71: accuracy measured HERE — top1=1.0 kl=0.0026138848583891474
+#71: box-side publish failed (expected — no git credentials there); publishing d0df95718c24 from here instead
+#71: tps=26.57 top1=1.0 kl=0.0026 ms/token=37.64 — tier is eval-label.yml's to derive
+#71: KLD 0.0026000 vs main 0.0059102 — 0.44x
+>> #71: published runs/d0df95718c24f77f1b9ce80d29e2782c to gittensor-ai-lab/sparkinfer-k3-log
+>> #71: cleared stale tier (eval:none) — it was measured against a frontier that has since moved
+>> posted eval to #71
+>> #71: tier applied by eval-label.yml — eval:none
+#88: evaluating 69de112d on h200x8 against frontier 26.09 …
+#88: accuracy measured HERE — top1=1.0 kl=0.0059102102093803194
+#88: box-side publish failed (expected — no git credentials there); publishing afb8af257d08 from here instead
+#88: tps=26.07 top1=1.0 kl=0.0059 ms/token=38.36 — tier is eval-label.yml's to derive
+#88: KLD 0.0059000 vs main 0.0059102 — 1.00x
+>> #88: published runs/afb8af257d080eca7f137310e6963e03 to gittensor-ai-lab/sparkinfer-k3-log
+>> #88: cleared stale tier (eval:none) — it was measured against a frontier that has since moved
+>> posted eval to #88
+>> #88: tier applied by eval-label.yml — eval:none
+#90: evaluating 7cfe57c0 on h200x8 against frontier 26.09 …
+#90: accuracy measured HERE — top1=1.0 kl=0.004062756946991641
+#90: box-side publish failed (expected — no git credentials there); publishing c7832aa0bede from here instead
+#90: tps=29.97 top1=1.0 kl=0.0041 ms/token=33.37 — tier is eval-label.yml's to derive
+#90: KLD 0.0041000 vs main 0.0059102 — 0.69x
+>> #90: published runs/c7832aa0bede60961df8cfba35a3bd33 to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #90
+>> #90: tier applied by eval-label.yml — eval:xl
+#96: evaluating d402bfa0 on h200x8 against frontier 26.09 …
+#96: accuracy measured HERE — top1=1.0 kl=0.0059102102093803194
+#96: box-side publish failed (expected — no git credentials there); publishing e7a04dd1d5e9 from here instead
+#96: tps=26.12 top1=1.0 kl=0.0059 ms/token=38.28 — tier is eval-label.yml's to derive
+#96: KLD 0.0059000 vs main 0.0059102 — 1.00x
+>> #96: published runs/e7a04dd1d5e9502142bcf872b7cecfae to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #96
+>> #96: tier applied by eval-label.yml — eval:none
+>> #88: 26.07 tok/s does not beat the 26.09 tok/s frontier — not a merge candidate
+>> merge-first: #90 (29.97 tok/s)
+>> #90: auto-merge queued — fires when review + checks pass
+>> #90: merged (admin) — round's largest verified gain
+>> #71: needs-rebase (frontier moved)
+>> #88: needs-rebase (frontier moved)
+>> #96: needs-rebase (frontier moved)
+done — 4 evaluated, 4 sealed to the log; tiers are eval-label.yml's
