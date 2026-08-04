@@ -1,0 +1,115 @@
+#55: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#76: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#105: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+main: measuring the frontier at e6a3afb0 on h200x8 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+main: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+main: frontier = 40.03 tok/s @ e6a3afb0
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K pins 40.02, main measures 40.03 — agrees within 2%, leaving the lock alone
+#104: evaluating b3fe51d8 on h200x8 against frontier 40.02 …
+     ctx4: top1=1.000000 kl=0.004538860
+   ctx128: top1=1.000000 kl=0.000046209
+   ctx256: top1=1.000000 kl=0.000002271
+   ctx512: top1=1.000000 kl=0.000096551
+  ctx1024: top1=1.000000 kl=0.000018631
+  ctx2048: top1=1.000000 kl=0.000119183
+  ctx4096: top1=1.000000 kl=0.000002993
+#104: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.004538860312629991
+#104: eval failed — no RESULT_JSON from the harness for #104 —   bounds nothing and the self-report is unchecked.
+>> model fingerprint  : 39a295d6b5871e88 (no pin — recorded, not enforced)
+>> Kimi K3 eval — node=h200x8 devices=0,1,2,3,4,5,6,7 layers=93 ctx=131072
+>> llama.cpp reference (tier basis): 18.4435 tok/s  @ ctx 131072
+>> sparkinfer frontier             : 40.02 tok/s
+>> timing sparkinfer decode at ctx 131072 (2 runs, 8 and 520 tokens) ...
+
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+>> wall-clock bound: 65.38 tok/s (15.30 ms/token) over 512 marginal tokens
+kimi_k3_eval: 512 extra tokens took 7.83 s of wall clock, but at the claimed 35.86 ms/token they must take about 18.36 s (9.18 s at the 2.0x floor).
+  refusing to score: the longer run did not do the extra work, so the differential
+  bounds nothing and the self-report is unchecked.
+
+#109: evaluating 3a53e4f5 on h200x8 against frontier 40.02 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#109: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#109: eval failed — no RESULT_JSON from the harness for #109 —   faster than elapsed time is the signature of a fabricated number.
+>> model fingerprint  : 39a295d6b5871e88 (no pin — recorded, not enforced)
+>> Kimi K3 eval — node=h200x8 devices=0,1,2,3,4,5,6,7 layers=93 ctx=131072
+>> llama.cpp reference (tier basis): 18.4435 tok/s  @ ctx 131072
+>> sparkinfer frontier             : 40.02 tok/s
+>> timing sparkinfer decode at ctx 131072 (2 runs, 8 and 520 tokens) ...
+
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+>> wall-clock bound: 16.96 tok/s (58.97 ms/token) over 512 marginal tokens
+kimi_k3_eval: the bench claims 39.96 tok/s but wall clock allows at most 25.44 (16.96 x 1.5).
+  refusing to score: the binary is built from the PR's runtime/, and a self-report
+  faster than elapsed time is the signature of a fabricated number.
+
+#113: evaluating a62bc6eb on h200x8 against frontier 40.02 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#113: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#113: eval failed — no RESULT_JSON from the harness for #113 — kimi_k3_eval: non-positive time delta (-4037465508 ns over 512 tokens) — the longer run was not slower, so nothing was measured
+>> model fingerprint  : 39a295d6b5871e88 (no pin — recorded, not enforced)
+>> Kimi K3 eval — node=h200x8 devices=0,1,2,3,4,5,6,7 layers=93 ctx=131072
+>> llama.cpp reference (tier basis): 18.4435 tok/s  @ ctx 131072
+>> sparkinfer frontier             : 40.02 tok/s
+>> timing sparkinfer decode at ctx 131072 (2 runs, 8 and 520 tokens) ...
+
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+kimi_k3_eval: non-positive time delta (-4037465508 ns over 512 tokens) — the longer run was not slower, so nothing was measured
+
+#114: evaluating 293e82f3 on h200x8 against frontier 40.02 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#114: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#114: box-side publish failed (expected — no git credentials there); publishing 3898c809fb77 from here instead
+#114: tps=45.38 top1=1.0 kl=0.006694998 ms/token=22.03 — tier is eval-label.yml's to derive
+#114: KLD 0.006694998 vs main 0.006694998 — 1.00x at ctx4 (worst of 7 depths) [ctx4=1.00x ctx128=1.00x ctx256=1.00x ctx512=1.00x ctx1024=1.00x ctx2048=1.00x ctx4096=1.00x]
+>> #114: published runs/3898c809fb7745c52b69178244bedd75 to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #114
+>> #114: tier applied by eval-label.yml — eval:xl
+#115: evaluating 8fe15a3b on h200x8 against frontier 40.02 …
+     ctx4: top1=1.000000 kl=0.010727574
+   ctx128: top1=1.000000 kl=0.000022304
+   ctx256: top1=1.000000 kl=0.000009617
+   ctx512: top1=1.000000 kl=0.000065321
+  ctx1024: top1=1.000000 kl=0.000067953
+  ctx2048: top1=1.000000 kl=0.001943870
+  ctx4096: top1=1.000000 kl=0.000000325
+#115: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.01072757437899282
+#115: box-side publish failed (expected — no git credentials there); publishing 87a834ea1482 from here instead
+#115: tps=41.15 top1=1.0 kl=0.010727574 ms/token=24.3 — tier is eval-label.yml's to derive
+#115: KLD 0.001943870 vs main 0.000419637 — 4.63x at ctx2048 (worst of 7 depths) [ctx4=1.60x ctx128=0.58x ctx256=3.41x ctx512=2.60x ctx1024=1.06x ctx2048=4.63x ctx4096=0.21x] (>= 2.0x — accuracy regression)
+!! #115: accuracy regression — labelling accuracy-regression, which blocks the automatic merge
+!! #115: could not apply accuracy-regression (GraphQL: Projects (classic) is being deprecated in favor of the new Projects experience, see: https://github.blog/change) — excluding it from the merge decision
+>> #115: published runs/87a834ea14824aacaae4ad5cf88089d4 to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #115
+>> #115: tier applied by eval-label.yml — eval:s
+>> merge-first: #114 (45.38 tok/s)
+>> #114: auto-merge queued — fires when review + checks pass
+done — 2 evaluated, 2 sealed to the log; tiers are eval-label.yml's
