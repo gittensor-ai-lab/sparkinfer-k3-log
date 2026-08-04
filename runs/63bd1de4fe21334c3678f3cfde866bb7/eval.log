@@ -1,0 +1,91 @@
+>> #55: merge-conflict (conflicts with main — not evaluated)
+#55: skip — conflicts with main — rebase before it can be evaluated or merged
+#76: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#105: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#123: skip — draft — unfinished work is not evaluated
+#125: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+main: measuring the frontier at e6a10434 on h200x8 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+main: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+main: frontier = 44.85 tok/s @ e6a10434
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K 40.02 -> 44.85 (main @ e6a10434)
+>> bench/scripts/reference.lock updated on main — eval-label.yml will re-derive against 44.85
+   note: main moved, so every open PR is now BEHIND (branch protection is strict) and needs a rebase before it can merge
+>> #104: branch updated onto main, d4176b84 -> ea87f11e
+>> #109: branch updated onto main, c3c632ae -> 8c9c308c
+>> #113: branch updated onto main, d02f0fde -> 0114c199
+>> #115: branch updated onto main, db1e9185 -> 910549e6
+#104: evaluating ea87f11e on h200x8 against frontier 44.85 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#104: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#104: box-side publish failed (expected — no git credentials there); publishing b78a18d6abe5 from here instead
+#104: tps=41.38 top1=1.0 kl=0.006694998 ms/token=24.17 — tier is eval-label.yml's to derive
+#104: KLD 0.006694998 vs main 0.006694998 — 1.00x at ctx4 (worst of 1 material depths of 7) [ctx4=1.00x ctx128=1.00x* ctx256=1.00x* ctx512=1.00x* ctx1024=1.00x* ctx2048=1.00x* ctx4096=1.00x*]
+>> #104: published runs/b78a18d6abe590860bd2e1f434059352 to gittensor-ai-lab/sparkinfer-k3-log
+>> #104: cleared stale tier (eval:none) — it was measured against a frontier that has since moved
+>> posted eval to #104
+>> #104: tier applied by eval-label.yml — eval:none
+#109: evaluating 8c9c308c on h200x8 against frontier 44.85 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#109: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#109: box-side publish failed (expected — no git credentials there); publishing 7573f3923b57 from here instead
+#109: tps=45.38 top1=1.0 kl=0.006694998 ms/token=22.04 — tier is eval-label.yml's to derive
+#109: KLD 0.006694998 vs main 0.006694998 — 1.00x at ctx4 (worst of 1 material depths of 7) [ctx4=1.00x ctx128=1.00x* ctx256=1.00x* ctx512=1.00x* ctx1024=1.00x* ctx2048=1.00x* ctx4096=1.00x*]
+>> #109: published runs/7573f3923b573d14f90dfca6817da11d to gittensor-ai-lab/sparkinfer-k3-log
+>> #109: cleared stale tier (eval:none) — it was measured against a frontier that has since moved
+>> posted eval to #109
+>> #109: tier applied by eval-label.yml — eval:none
+#113: evaluating 0114c199 on h200x8 against frontier 44.85 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#113: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#113: box-side publish failed (expected — no git credentials there); publishing 963660004203 from here instead
+#113: tps=39.61 top1=1.0 kl=0.006694998 ms/token=25.25 — tier is eval-label.yml's to derive
+#113: KLD 0.006694998 vs main 0.006694998 — 1.00x at ctx4 (worst of 1 material depths of 7) [ctx4=1.00x ctx128=1.00x* ctx256=1.00x* ctx512=1.00x* ctx1024=1.00x* ctx2048=1.00x* ctx4096=1.00x*]
+>> #113: published runs/963660004203789dc4ae0ac6f68a9191 to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #113
+>> #113: tier applied by eval-label.yml — eval:none
+#115: evaluating 910549e6 on h200x8 against frontier 44.85 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#115: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#115: box-side publish failed (expected — no git credentials there); publishing 63bd1de4fe21 from here instead
+#115: tps=46.49 top1=1.0 kl=0.006694998 ms/token=21.51 — tier is eval-label.yml's to derive
+#115: KLD 0.006694998 vs main 0.006694998 — 1.00x at ctx4 (worst of 1 material depths of 7) [ctx4=1.00x ctx128=1.00x* ctx256=1.00x* ctx512=1.00x* ctx1024=1.00x* ctx2048=1.00x* ctx4096=1.00x*]
+>> #115: published runs/63bd1de4fe21334c3678f3cfde866bb7 to gittensor-ai-lab/sparkinfer-k3-log
+>> #115: cleared stale tier (eval:xs) — it was measured against a frontier that has since moved
+>> posted eval to #115
+>> #115: tier applied by eval-label.yml — eval:s
+>> #104: 41.38 tok/s does not beat the 44.85 tok/s frontier — not a merge candidate
+>> #113: 39.61 tok/s does not beat the 44.85 tok/s frontier — not a merge candidate
+>> merge-first: #115 (46.49 tok/s)
+>> #115: auto-merge queued — fires when review + checks pass
+done — 4 evaluated, 4 sealed to the log; tiers are eval-label.yml's
