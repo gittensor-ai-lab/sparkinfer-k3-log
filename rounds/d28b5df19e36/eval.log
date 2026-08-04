@@ -1,0 +1,5 @@
+#55: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#76: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#105: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+main: measuring the frontier at d28b5df1 on h200x8 …
+frontier measurement failed after retries — main: probe ctx4 produced no logits — refusing to score a partial parity suite. Came back: ['longctx.ctx1024.spkl', 'longctx.ctx128.spkl', 'longctx.ctx2048.spkl', 'longctx.ctx256.spkl', 'longctx.ctx4096.spkl', 'longctx.ctx512.spkl', 'longctx.ctx8192.spkl']; box stderr: bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
