@@ -1,0 +1,115 @@
+#55: skip — conflicts with main — rebase before it can be evaluated or merged
+#76: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#105: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#125: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#128: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+main: measuring the frontier at de47bfe1 on h200x8 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+main: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+main: frontier = 46.48 tok/s @ de47bfe1
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K 44.85 -> 46.48 (main @ de47bfe1)
+>> bench/scripts/reference.lock updated on main — eval-label.yml will re-derive against 46.48
+   note: main moved, so every open PR is now BEHIND (branch protection is strict) and needs a rebase before it can merge
+>> #109: branch updated onto main, 88116324 -> 91a392ea
+>> #113: branch updated onto main, 0114c199 -> 21b5d389
+>> #123: branch updated onto main, 4ff8dd96 -> 39b4686c
+>> #127: branch updated onto main, e95f06eb -> 0aa38ba2
+#104: evaluating b2b7df79 on h200x8 against frontier 46.48 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#104: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#104: box-side publish failed (expected — no git credentials there); publishing 611a9a7e0647 from here instead
+#104: tps=16.79 top1=1.0 kl=0.006694998 ms/token=59.55 — tier is eval-label.yml's to derive
+#104: KLD 0.006694998 vs main 0.006694998 — 1.00x at ctx4 (worst of 1 material depths of 7) [ctx4=1.00x ctx128=1.00x* ctx256=1.00x* ctx512=1.00x* ctx1024=1.00x* ctx2048=1.00x* ctx4096=1.00x*]
+>> #104: published runs/611a9a7e0647547f54870ba085700736 to gittensor-ai-lab/sparkinfer-k3-log
+>> #104: cleared stale tier (eval:none) — it was measured against a frontier that has since moved
+>> posted eval to #104
+>> #104: tier applied by eval-label.yml — eval:none
+#109: evaluating 91a392ea on h200x8 against frontier 46.48 …
+     ctx4: top1=1.000000 kl=0.008317568
+   ctx128: top1=1.000000 kl=0.000062795
+   ctx256: top1=1.000000 kl=0.000006264
+   ctx512: top1=1.000000 kl=0.000015317
+  ctx1024: top1=1.000000 kl=0.000019849
+  ctx2048: top1=1.000000 kl=0.001756797
+  ctx4096: top1=1.000000 kl=0.000003187
+#109: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.008317568117144746
+#109: box-side publish failed (expected — no git credentials there); publishing 6be357161da6 from here instead
+#109: tps=47.21 top1=1.0 kl=0.008317568 ms/token=21.18 — tier is eval-label.yml's to derive
+#109: KLD 0.001756797 vs main 0.000419637 — 4.19x at ctx2048 (worst of 2 material depths of 7) [ctx4=1.24x ctx128=1.63x* ctx256=2.22x* ctx512=0.61x* ctx1024=0.31x* ctx2048=4.19x ctx4096=2.07x*] (>= 1.25x — worse than main — reported only: 0.001756797 is under the 0.05 bar)
+>> #109: published runs/6be357161da6516654f5350600f37a44 to gittensor-ai-lab/sparkinfer-k3-log
+>> #109: cleared stale tier (eval:none) — it was measured against a frontier that has since moved
+>> posted eval to #109
+>> #109: tier applied by eval-label.yml — eval:none
+#113: evaluating 21b5d389 on h200x8 against frontier 46.48 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#113: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#113: box-side publish failed (expected — no git credentials there); publishing 5f4ab5c100ed from here instead
+#113: tps=40.48 top1=1.0 kl=0.006694998 ms/token=24.7 — tier is eval-label.yml's to derive
+#113: KLD 0.006694998 vs main 0.006694998 — 1.00x at ctx4 (worst of 1 material depths of 7) [ctx4=1.00x ctx128=1.00x* ctx256=1.00x* ctx512=1.00x* ctx1024=1.00x* ctx2048=1.00x* ctx4096=1.00x*]
+>> #113: published runs/5f4ab5c100edec3ccfed909b674aa62d to gittensor-ai-lab/sparkinfer-k3-log
+>> #113: cleared stale tier (eval:none) — it was measured against a frontier that has since moved
+>> posted eval to #113
+>> #113: tier applied by eval-label.yml — eval:none
+#123: evaluating 39b4686c on h200x8 against frontier 46.48 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#123: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#123: box-side publish failed (expected — no git credentials there); publishing d757e6f6bad8 from here instead
+#123: tps=46.81 top1=1.0 kl=0.006694998 ms/token=21.36 — tier is eval-label.yml's to derive
+#123: KLD 0.006694998 vs main 0.006694998 — 1.00x at ctx4 (worst of 1 material depths of 7) [ctx4=1.00x ctx128=1.00x* ctx256=1.00x* ctx512=1.00x* ctx1024=1.00x* ctx2048=1.00x* ctx4096=1.00x*]
+>> #123: published runs/d757e6f6bad8acca6f7f3c22f071328d to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #123
+>> #123: tier applied by eval-label.yml — eval:none
+#127: evaluating 0aa38ba2 on h200x8 against frontier 46.48 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#127: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#127: eval failed — no RESULT_JSON from the harness for #127 —   Re-measure by hand and raise KIMI_K3_MAX_OVER_LLAMA deliberately if it is real.
+>> model fingerprint  : 39a295d6b5871e88 (no pin — recorded, not enforced)
+>> Kimi K3 eval — node=h200x8 devices=0,1,2,3,4,5,6,7 layers=93 ctx=131072
+>> llama.cpp reference (tier basis): 18.4435 tok/s  @ ctx 131072
+>> sparkinfer frontier             : 46.48 tok/s
+>> timing sparkinfer decode at ctx 131072 (2 runs, 8 and 2056 tokens) ...
+
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+>> wall-clock bound: 50.77 tok/s (19.70 ms/token) over 2048 marginal tokens
+kimi_k3_eval: the bench claims 56.76 tok/s, over 3.0x the llama.cpp reference (18.4435) at this context — ceiling 55.33.
+  refusing to score: past this point the wall-clock differential is smaller than
+  load jitter, so nothing here can tell a breakthrough from a fabrication.
+  Re-measure by hand and raise KIMI_K3_MAX_OVER_LLAMA deliberately if it is real.
+
+>> #104: needs-rebase (frontier moved)
+>> #104: 16.79 tok/s does not beat the 46.48 tok/s frontier — not a merge candidate
+>> #113: 40.48 tok/s does not beat the 46.48 tok/s frontier — not a merge candidate
+>> merge-first: #109 (47.21 tok/s)
+!! #109: NOT queued for auto-merge — eval:none — measured no significant gain over the current frontier
+done — 4 evaluated, 4 sealed to the log; tiers are eval-label.yml's
