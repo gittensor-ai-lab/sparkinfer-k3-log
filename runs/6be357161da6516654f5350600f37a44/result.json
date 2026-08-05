@@ -1,0 +1,59 @@
+{
+  "accuracy_source": "controller",
+  "commit": "91a392e",
+  "delta_tps": 0.73,
+  "devices": "0,1,2,3,4,5,6,7",
+  "engine": "sparkinfer/kimi_k3_tp_bench",
+  "frontier_tps": 46.48,
+  "kl": 0.008317568,
+  "kl_bar": 0.05,
+  "kl_depths": {
+    "ctx1024": {
+      "kl": 1.9849093594305333e-05,
+      "top1": 1.0
+    },
+    "ctx128": {
+      "kl": 6.279489507683624e-05,
+      "top1": 1.0
+    },
+    "ctx2048": {
+      "kl": 0.001756797496727094,
+      "top1": 1.0
+    },
+    "ctx256": {
+      "kl": 6.263789338712272e-06,
+      "top1": 1.0
+    },
+    "ctx4": {
+      "kl": 0.008317568117144746,
+      "top1": 1.0
+    },
+    "ctx4096": {
+      "kl": 3.1866034270795503e-06,
+      "top1": 1.0
+    },
+    "ctx512": {
+      "kl": 1.531691094520707e-05,
+      "top1": 1.0
+    }
+  },
+  "kl_prefer": 0.02,
+  "label": "none",
+  "layers": 93,
+  "llama_commit": "",
+  "model_fingerprint": "39a295d6b5871e88",
+  "ms_per_token": 21.18,
+  "node": "h200x8",
+  "note": "within significance gate \u2014 not a verified improvement",
+  "pass": true,
+  "pct_over_frontier": 1.6,
+  "quant": "UD-IQ1_S",
+  "receipt_id": "6be357161da6516654f5350600f37a44",
+  "scored_context": 131072,
+  "scored_ctx": 131072,
+  "speed_label": "none",
+  "speed_source": "self_report_wall_clock_bounded",
+  "tier_basis": "llama_anchored",
+  "top1": 1.0,
+  "tps": 47.21
+}
