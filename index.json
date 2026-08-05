@@ -1,5 +1,16 @@
 [
   {
+    "run_id": "6be357161da6516654f5350600f37a44",
+    "timestamp_utc": "2026-08-05T02:04:02+00:00",
+    "label": "none",
+    "tps": 47.21,
+    "top1": 1.0,
+    "kl": 0.008317568,
+    "commit": "91a392ea32119a17a431daa695185a753ce15828",
+    "attestation_type": "tdx-quote",
+    "pr": 109
+  },
+  {
     "run_id": "611a9a7e0647547f54870ba085700736",
     "timestamp_utc": "2026-08-05T01:52:35+00:00",
     "label": "none",
