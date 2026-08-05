@@ -1,0 +1,31 @@
+main: measuring the frontier at cac4595a on h200x8 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+main: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+   harness overrides from the controller: KIMI_K3_MAX_OVER_LLAMA=5.0
+main: frontier = 46.11 tok/s @ cac4595a
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_128K pins 46.48, main measures 46.11 — agrees within 2%, leaving the lock alone
+#127: evaluating 0aa38ba2 on h200x8 against frontier 46.48 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#127: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+   harness overrides from the controller: KIMI_K3_MAX_OVER_LLAMA=5.0
+#127: box-side publish failed (expected — no git credentials there); publishing 8641ae28987a from here instead
+#127: tps=56.82 top1=1.0 kl=0.006694998 ms/token=17.6 — tier is eval-label.yml's to derive
+#127: KLD 0.006694998 vs main 0.006694998 — 1.00x at ctx4 (worst of 1 material depths of 7) [ctx4=1.00x ctx128=1.00x* ctx256=1.00x* ctx512=1.00x* ctx1024=1.00x* ctx2048=1.00x* ctx4096=1.00x*]
+>> #127: published runs/8641ae28987a4f8fdcc896dbe5443cd5 to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #127
+>> #127: tier applied by eval-label.yml — eval:xl
+>> merge-first: #127 (56.82 tok/s)
+>> #127: auto-merge queued — fires when review + checks pass
+done — 1 evaluated, 1 sealed to the log; tiers are eval-label.yml's
