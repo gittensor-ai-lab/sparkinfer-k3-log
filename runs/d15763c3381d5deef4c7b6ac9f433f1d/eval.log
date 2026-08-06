@@ -1,0 +1,48 @@
+>> #109: merge-conflict (conflicts with main — not evaluated)
+>> #125: merge-conflict (conflicts with main — not evaluated)
+>> #128: merge-conflict (conflicts with main — not evaluated)
+>> #135: merge-conflict (conflicts with main — not evaluated)
+>> #137: merge-conflict (conflicts with main — not evaluated)
+>> #145: merge-conflict (conflicts with main — not evaluated)
+>> #148: merge-conflict (conflicts with main — not evaluated)
+#55: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#76: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#105: skip — needs-node-run — node-attestation.yml found no ticked node box in '## Node run'
+#109: skip — conflicts with main — rebase before it can be evaluated or merged
+#125: skip — conflicts with main — rebase before it can be evaluated or merged
+#128: skip — conflicts with main — rebase before it can be evaluated or merged
+#135: skip — conflicts with main — rebase before it can be evaluated or merged
+#137: skip — conflicts with main — rebase before it can be evaluated or merged
+#138: skip — claimed prefill 42.5 does not beat the pinned 59.59 frontier (-28.7%) by the 2% significance gate — it would score `none` even if exact, so the node has nothing to learn. Re-measure against the current frontier, or close it
+#145: skip — draft — unfinished work is not evaluated
+#148: skip — conflicts with main — rebase before it can be evaluated or merged
+main: measuring the frontier at 23949db6 on h200x8 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+main: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+main: frontier = 66.62 tok/s @ 23949db6
+!! KIMI_K3_H200X8_IQ1S_SPARKINFER_32K_PP pinned 59.59 but main measures 66.62 — the pin was stale by 11.8%.
+   Rounds were unaffected (the frontier is measured and passed explicitly), but eval-label.yml derives tiers from this pin and contributors read it to decide what to beat, so anything scored or written against 59.59 was priced wrong.
+>> frontier: KIMI_K3_H200X8_IQ1S_SPARKINFER_32K_PP 59.59 -> 66.62 (main @ 23949db6)
+>> bench/scripts/reference.lock updated on main — eval-label.yml will re-derive against 66.62
+   note: main moved, so every open PR is now BEHIND (branch protection is strict) and needs a rebase before it can merge
+#136: evaluating 0b8b5d99 on h200x8 against frontier 66.62 …
+     ctx4: top1=1.000000 kl=0.006694998
+   ctx128: top1=1.000000 kl=0.000038610
+   ctx256: top1=1.000000 kl=0.000002824
+   ctx512: top1=1.000000 kl=0.000025096
+  ctx1024: top1=1.000000 kl=0.000064222
+  ctx2048: top1=1.000000 kl=0.000419637
+  ctx4096: top1=1.000000 kl=0.000001542
+#136: accuracy measured HERE over 7 depths — worst top1=1.0 worst kl=0.006694998054076399
+#136: box-side publish failed (expected — no git credentials there); publishing d15763c3381d from here instead
+#136: tps=69.0 top1=1.0 kl=0.006694998 ms/token=14.492 — tier is eval-label.yml's to derive
+#136: KLD 0.006694998 vs main 0.006694998 — 1.00x at ctx4 (worst of 1 material depths of 7) [ctx4=1.00x ctx128=1.00x* ctx256=1.00x* ctx512=1.00x* ctx1024=1.00x* ctx2048=1.00x* ctx4096=1.00x*]
+>> #136: published runs/d15763c3381d5deef4c7b6ac9f433f1d to gittensor-ai-lab/sparkinfer-k3-log
+>> posted eval to #136
+done — 1 evaluated, 1 sealed to the log; tiers are eval-label.yml's
